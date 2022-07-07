@@ -17,7 +17,7 @@ h1 , h2{
 button{
     padding: .4em;
     margin: .25em;
-    background-color: azure;
+    background-color: cadetblue;
 }
 
 button:hover{

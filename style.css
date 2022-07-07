@@ -15,5 +15,14 @@ h1 , h2{
 }
 
 button{
-    
+    padding: .4em;
+    margin: .25em;
+    background-color: azure;
+}
+
+button:hover{
+    border: 2px solid white;
+}
+.negative{
+    color: red;
 }

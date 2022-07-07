@@ -15,19 +15,25 @@ let count2 = 0
 btn1.addEventListener("click" , () =>{
     count1++
     playerOneh2.textContent = count1
+    count1 >= 0? playerOneh2.classList.remove("negative") : null
 })
 
 btn2.addEventListener("click" , () =>{
     count1--
     playerOneh2.textContent = count1
+    count1 < 0 ? playerOneh2.classList.add("negative") : null
 })
 
+
+console.log(playerOneh2.classList)
 
 btn3.addEventListener("click" , () =>{
     count2++
     playerTwoh2.textContent = count2
+    count2 >= 0 ? playerTwoh2.classList.remove("negative") : null 
 })
 btn4.addEventListener("click" , () =>{
     count2--
     playerTwoh2.textContent = count2
+    count2 < 0 ? playerTwoh2.classList.add("negative") : null
 })

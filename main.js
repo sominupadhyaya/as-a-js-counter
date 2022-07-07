@@ -1,5 +1,12 @@
 const playerOneh2 = document.querySelector("[player-one]")
+
 const btn1 = document.querySelector("[button-one]")
+const btn2 = document.querySelector("[button-two]")
+
+const playerTwoh2 = document.querySelector("[player-two]") 
+const btn3 = document.querySelector("[button-three]")
+const btn4 = document.querySelector("[button-four]")
+
 
 
 let count1 = 1
@@ -10,11 +17,9 @@ btn1.addEventListener("click" , () =>{
     count1++
 })
 
-const playerTwoh2 = document.querySelector("[player-two]") 
-const btn2 = document.querySelector("[button-two]")
 
 
-btn2.addEventListener("click" , () =>{
+btn3.addEventListener("click" , () =>{
     playerTwoh2.textContent = count2
     count2++
 })

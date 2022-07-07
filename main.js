@@ -9,17 +9,25 @@ const btn4 = document.querySelector("[button-four]")
 
 
 
-let count1 = 1
-let count2 = 1
+let count1 = 0
+let count2 = 0
 
 btn1.addEventListener("click" , () =>{
-    playerOneh2.textContent = count1
     count1++
+    playerOneh2.textContent = count1
+})
+
+btn2.addEventListener("click" , () =>{
+    count1--
+    playerOneh2.textContent = count1
 })
 
 
-
 btn3.addEventListener("click" , () =>{
-    playerTwoh2.textContent = count2
     count2++
+    playerTwoh2.textContent = count2
+})
+btn4.addEventListener("click" , () =>{
+    count2--
+    playerTwoh2.textContent = count2
 })

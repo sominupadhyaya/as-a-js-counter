@@ -37,3 +37,12 @@ btn4.addEventListener("click" , () =>{
     playerTwoh2.textContent = count2
     count2 < 0 ? playerTwoh2.classList.add("negative") : null
 })
+
+
+/*
+const eventFunction = (count, player) => () => {
+    count--
+    player.textContent = count
+    count >= 0? player.classList.remove("negative")
+}
+*/

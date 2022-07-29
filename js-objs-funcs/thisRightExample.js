@@ -1,12 +1,15 @@
-const userBad = {
-  name: "somin",
-  age: 16,
-  sayName() {
-    console.log(`My name is  ${this.name}`) //somin
-    function fullName() {
-      console.log(`My name is ${this.name} and my age is ${this.age}`) // my name is undefined and my age is undefined
+const userGood = {
+    name : "Somin" , 
+    age : 15,
+    sayNam(){
+        console.log(`My name is ${this.name}`); //somin 
+        fullNam = () => console.log(`My name is ${this.name} and age is ${this.age}`) // My name is Somin and age is 15
+        fullNam()
     }
-    fullName()
-  },
 }
-userBad.sayName()
+
+userGood.sayNam()
+
+
+// never use () => functions as methods in objects as they refer to the lexical environment i.e outside
+// the object so gives window object
